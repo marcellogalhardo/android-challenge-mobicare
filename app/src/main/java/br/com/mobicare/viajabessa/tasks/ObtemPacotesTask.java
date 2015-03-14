@@ -6,6 +6,7 @@ import android.widget.Toast;
 import java.util.List;
 
 import br.com.mobicare.viajabessa.events.ObtemPacotesTaskConcluidaEvent;
+import br.com.mobicare.viajabessa.events.ObtemPacotesTaskFalhaEvent;
 import br.com.mobicare.viajabessa.models.Pacote;
 import br.com.mobicare.viajabessa.services.PacoteService;
 import br.com.mobicare.viajabessa.services.ServiceFactory;
@@ -21,8 +22,12 @@ public class ObtemPacotesTask extends AsyncTask<String, Object, List<Pacote>> {
     @Override
     protected List<Pacote> doInBackground(String... params) {
         PacoteService service = ServiceFactory.criarPacoteService();
-        List<Pacote> pacotes = service.obterTodos();
-        BusProvider.getInstance().post(new ObtemPacotesTaskConcluidaEvent(pacotes));
+        try {
+            List<Pacote> pacotes = service.obterTodos();
+            BusProvider.getInstance().post(new ObtemPacotesTaskConcluidaEvent(pacotes));
+        } catch (Exception e) {
+            BusProvider.getInstance().post(new ObtemPacotesTaskFalhaEvent(e));
+        }
         return null;
     }
 
