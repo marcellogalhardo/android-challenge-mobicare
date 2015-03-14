@@ -1,15 +1,11 @@
 package br.com.mobicare.viajabessa.utils;
 
-import com.squareup.otto.Bus;
-
 public final class BusProvider {
-    private static final Bus BUS = new Bus();
+    private static final MainThreadBus BUS = new MainThreadBus();
 
-    public static Bus getInstance() {
+    public static MainThreadBus getInstance() {
         return BUS;
     }
 
-    private BusProvider() {
-        // Singleton.
-    }
+    private BusProvider() {}
 }

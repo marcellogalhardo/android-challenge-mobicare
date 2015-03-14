@@ -2,4 +2,8 @@
     <string name="app.name">Viajabessa</string>
     <string name="title.main">Viajabessa</string>
     <string name="menu.refresh">Atualizar</string>
+    <string name="uri.package">http://private-6082a-mobicareviajabessa.apiary-mock.com/</string>
+    <string name="pacote.selecionado">pacote_selecionado</string>
+    <string name="format.money">%10.2f</string>
+    <string name="message.update">Atualizando dados...</string>
 </resources>

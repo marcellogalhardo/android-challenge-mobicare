@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="indigo">#3F51B5</color>
-    <color name="indigo_dark">#303F9F</color>
-    <color name="indigo_light">#536DFE</color>
-
-    <color name="blue_grey">#607D8B</color>
-    <color name="blue_grey_dark">#455A64</color>
-    <color name="blue_grey_light">#607D8B</color>
-
-    <color name="grey">#9E9E9E</color>
-    <color name="grey_dark">#616161</color>
+    <color name="amber">#FFC107</color>
+    <color name="amber_dark">#FFA000</color>
+    <color name="amber_light">#FFECB3</color>
+    <color name="red_accent">#FF5252</color>
 </resources>

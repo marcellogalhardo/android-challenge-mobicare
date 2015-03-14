@@ -8,41 +8,59 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.otto.Subscribe;
+
 import br.com.mobicare.viajabessa.R;
+import br.com.mobicare.viajabessa.events.PacoteListagemItemClickEvent;
+import br.com.mobicare.viajabessa.models.Pacote;
 import br.com.mobicare.viajabessa.utils.BusProvider;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
 public class PacoteDetalhesFragment extends Fragment {
+    private Pacote mPacote;
+
     @InjectView(R.id.pacote_nome)
-    TextView nome;
+    TextView textViewPacoteNome;
 
     @InjectView(R.id.pacote_foto)
-    ImageView foto;
+    ImageView imageViewPacoteFoto;
 
     @InjectView(R.id.pacote_valor)
-    TextView valor;
+    TextView textViewPacoteValor;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceBundle) {
         View view = inflater.inflate(R.layout.fragment_pacote_detalhes, null);
         ButterKnife.inject(this, view);
-        mockUi();
+        carregarParametros();
+        carregarUi();
         return view;
     }
 
-    @Override public void onResume() {
+    @Override
+    public void onResume() {
         super.onResume();
         BusProvider.getInstance().register(this);
     }
 
-    @Override public void onPause() {
+    @Override
+    public void onPause() {
         super.onPause();
         BusProvider.getInstance().unregister(this);
     }
 
-    private void mockUi() {
-        nome.setText("Teste");
+    private void carregarParametros() {
+        if (getArguments() != null) {
+            mPacote = (Pacote) getArguments().getSerializable(getString(R.string.pacote_selecionado));
+        } else {
+            mPacote = new Pacote();
+        }
+    }
+
+    private void carregarUi() {
+        textViewPacoteNome.setText(mPacote.getNome());
+        textViewPacoteValor.setText(String.format(getString(R.string.format_money), mPacote.getValor()));
     }
 
 }
