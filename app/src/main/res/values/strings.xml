@@ -1,0 +1,5 @@
+<resources>
+    <string name="app.name">Viajabessa</string>
+    <string name="title.main">Viajabessa</string>
+    <string name="menu.refresh">Atualizar</string>
+</resources>
