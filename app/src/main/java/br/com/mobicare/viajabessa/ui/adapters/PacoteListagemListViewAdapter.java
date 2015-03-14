@@ -52,6 +52,8 @@ public class PacoteListagemListViewAdapter extends BaseAdapter {
             mViewHolder = (ViewHolder) convertView.getTag();
         }
         mViewHolder.mTextViewNome.setText(mPacotes.get(position).getNome());
+        mViewHolder.mTextViewValor.setText(String.format(mContext.getString(R.string.format_money),
+                mPacotes.get(position).getValor()));
         return convertView;
     }
 

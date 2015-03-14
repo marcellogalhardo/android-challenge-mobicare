@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Theme Color -->
     <color name="amber">#FFC107</color>
     <color name="amber_dark">#FFA000</color>
     <color name="amber_light">#FFECB3</color>
     <color name="red_accent">#FF5252</color>
+    <color name="red">#F44336</color>
+    <color name="white">#ffffff</color>
+
+    <!-- List View Color -->
+    <color name="list_divider">#d9d9d9</color>
+    <color name="list_row_start">#ffffff</color>
+    <color name="list_row_end">#ffffff</color>
+    <color name="list_row_hover_start">#ebeef0</color>
+    <color name="list_row_hover_end">#ebeef0</color>
 </resources>

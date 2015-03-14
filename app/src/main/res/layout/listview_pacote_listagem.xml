@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp" >
 
     <ImageView
-        android:id="@+id/pacote_foto"
         android:src="@android:drawable/ic_menu_gallery"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:padding="15dp"
-        android:layout_alignParentLeft="true"/>
+        android:id="@+id/pacote_foto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
 
     <TextView
         android:id="@+id/pacote_nome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:padding="15dp"
-        android:textSize="16sp"
-        android:layout_toRightOf="@+id/pacote_foto" />
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/pacote_foto"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/pacote_valor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_vertical"
-        android:padding="15dp"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/red"
+        android:textSize="@dimen/price" />
 
 </RelativeLayout>
