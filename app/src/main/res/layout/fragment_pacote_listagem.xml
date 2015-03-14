@@ -9,8 +9,8 @@
         android:id="@+id/listview_pacote"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:divider="@color/list_divider"
-        android:dividerHeight="1dp"
-        android:listSelector="@drawable/list_row_selector" />
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent" />
 
 </android.support.v4.widget.SwipeRefreshLayout>

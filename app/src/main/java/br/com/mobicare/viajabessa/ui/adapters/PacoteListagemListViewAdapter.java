@@ -8,10 +8,13 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
 
 import br.com.mobicare.viajabessa.R;
 import br.com.mobicare.viajabessa.models.Pacote;
+import br.com.mobicare.viajabessa.utils.PicassoCache;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
@@ -51,21 +54,26 @@ public class PacoteListagemListViewAdapter extends BaseAdapter {
         } else {
             mViewHolder = (ViewHolder) convertView.getTag();
         }
-        mViewHolder.mTextViewNome.setText(mPacotes.get(position).getNome());
-        mViewHolder.mTextViewValor.setText(String.format(mContext.getString(R.string.format_money),
+        mViewHolder.textViewNome.setText(mPacotes.get(position).getNome());
+        mViewHolder.textViewValor.setText(String.format(mContext.getString(R.string.format_money),
                 mPacotes.get(position).getValor()));
+        PicassoCache.getInstance(mContext)
+                .load(mPacotes.get(position).getFoto())
+                .resize(500, 400)
+                .centerCrop()
+                .into(mViewHolder.imageViewFoto);
         return convertView;
     }
 
     public static class ViewHolder {
         @InjectView(R.id.pacote_nome)
-        TextView mTextViewNome;
+        TextView textViewNome;
 
         @InjectView(R.id.pacote_foto)
-        ImageView mImageViewFoto;
+        ImageView imageViewFoto;
 
         @InjectView(R.id.pacote_valor)
-        TextView mTextViewValor;
+        TextView textViewValor;
 
         public ViewHolder(View view) {
             ButterKnife.inject(this, view);

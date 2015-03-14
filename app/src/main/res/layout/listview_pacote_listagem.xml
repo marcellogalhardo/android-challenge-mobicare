@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/list_row_selector"
-    android:padding="8dp" >
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight">
 
-    <ImageView
-        android:src="@android:drawable/ic_menu_gallery"
-        android:id="@+id/pacote_foto"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginRight="8dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:orientation="horizontal"
+        android:background="@drawable/card_bg" >
 
-    <TextView
-        android:id="@+id/pacote_nome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_toRightOf="@+id/pacote_foto"
-        android:textSize="@dimen/title"
-        android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/pacote_foto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="8dp" />
 
-    <TextView
-        android:id="@+id/pacote_valor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:textColor="@color/red"
-        android:textSize="@dimen/price" />
+        <TextView
+            android:id="@+id/pacote_nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/title"
+            android:textStyle="bold" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/pacote_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="@dimen/price" />
+
+    </LinearLayout>
+
+</FrameLayout>
