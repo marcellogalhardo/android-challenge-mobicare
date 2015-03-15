@@ -21,3 +21,13 @@
  - OrmLite: Para persistência no banco de dados SQLite.
  - Retrofit: Para consumir o webservice com mock RestFull.
  - Butterknife: Para injetar as views.
+ 
+3. Imagens do aplicativo:
+
+<img src="https://raw.githubusercontent.com/marcellogalhardo/Viajabessa/master/screenshot/Screenshot_2015-03-15-15-13-01.png"></img>
+<img src="https://raw.githubusercontent.com/marcellogalhardo/Viajabessa/master/screenshot/Screenshot_2015-03-15-15-13-18.png"></img>
+<img src="https://raw.githubusercontent.com/marcellogalhardo/Viajabessa/master/screenshot/Screenshot_2015-03-15-15-13-31.png"></img>
+<img src="https://raw.githubusercontent.com/marcellogalhardo/Viajabessa/master/screenshot/Screenshot_2015-03-15-15-13-36.png"></img>
+<img src="https://raw.githubusercontent.com/marcellogalhardo/Viajabessa/master/screenshot/Screenshot_2015-03-15-15-13-46.png"></img>
+<img src="https://raw.githubusercontent.com/marcellogalhardo/Viajabessa/master/screenshot/Screenshot_2015-03-15-15-13-58.png"></img>
+<img src="https://raw.githubusercontent.com/marcellogalhardo/Viajabessa/master/screenshot/Screenshot_2015-03-15-15-14-10.png"></img>
