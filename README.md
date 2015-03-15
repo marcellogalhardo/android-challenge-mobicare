@@ -10,9 +10,9 @@
  - Services: Classes que acessam e consomem os serviços (webservice com mock).
  - Tasks: Tasks que são executadas fora da Ui Thread; AsyncTask.
  - Ui: Pacote com a responsabilidade de manipulação da View (ModelView).
- -- Activities.
- -- Fragments.
- -- Adapters: ListView Adapters.
+ - Ui.Activities.
+ - Ui.Fragments.
+ - Ui.Adapters: ListView Adapters.
  - Utils: Classes utilitárias.
 
 2. Frameworks utilizados:
