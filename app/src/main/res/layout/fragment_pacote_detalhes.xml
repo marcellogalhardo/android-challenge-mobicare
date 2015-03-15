@@ -1,30 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/pacote_nome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <ScrollView
+        android:id="@+id/scrollview_pacote"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
 
-    <TextView
-        android:id="@+id/pacote_valor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
-    <ImageView
-        android:id="@+id/pacote_foto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/amber"
+                android:gravity="center_vertical|center_horizontal"
+                android:padding="7dp"
+                android:orientation="horizontal" >
 
-    <TextView
-        android:id="@+id/botao_comprar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/pacote_nome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/title"
+                    android:textColor="@color/white"
+                    android:padding="5dp" />
+            </LinearLayout>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/pacote_foto"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
 
-</LinearLayout>
+            <TextView
+                android:id="@+id/pacote_descricao"
+                android:padding="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout android:id="@+id/rodape"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="5dp"
+        android:layout_above="@+id/scrollview_pacote"
+        android:layout_alignParentBottom="true"
+        android:background="@color/red" >
+
+        <TextView
+            android:id="@+id/pacote_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/price" />
+
+        <Button
+            android:id="@+id/button_comprar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/white"
+            android:background="@color/red"
+            android:text="Comprar" />
+
+    </LinearLayout>
+</RelativeLayout>

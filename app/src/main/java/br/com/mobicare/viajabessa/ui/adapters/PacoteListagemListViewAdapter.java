@@ -59,7 +59,7 @@ public class PacoteListagemListViewAdapter extends BaseAdapter {
                 mPacotes.get(position).getValor()));
         PicassoCache.getInstance(mContext)
                 .load(mPacotes.get(position).getFoto())
-                .resize(500, 400)
+                .fit()
                 .centerCrop()
                 .into(mViewHolder.imageViewFoto);
         return convertView;

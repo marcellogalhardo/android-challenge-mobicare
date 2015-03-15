@@ -5,8 +5,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.squareup.otto.Subscribe;
 import com.squareup.picasso.Picasso;
@@ -30,6 +32,12 @@ public class PacoteDetalhesFragment extends Fragment {
 
     @InjectView(R.id.pacote_valor)
     TextView textViewPacoteValor;
+
+    @InjectView(R.id.pacote_descricao)
+    TextView textViewDescricao;
+
+    @InjectView(R.id.button_comprar)
+    Button buttonComprar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceBundle) {
@@ -63,11 +71,18 @@ public class PacoteDetalhesFragment extends Fragment {
     private void carregarUi() {
         textViewPacoteNome.setText(mPacote.getNome());
         textViewPacoteValor.setText(String.format(getString(R.string.format_money), mPacote.getValor()));
+        textViewDescricao.setText(mPacote.getDescricao());
         PicassoCache.getInstance(getActivity())
                 .load(mPacote.getFoto())
-                .resize(50, 50)
+                .fit()
                 .centerCrop()
                 .into(imageViewPacoteFoto);
+        buttonComprar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(), "Integração com pagamento", Toast.LENGTH_LONG).show();
+            }
+        });
     }
 
 }
