@@ -10,11 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.squareup.otto.Subscribe;
-import com.squareup.picasso.Picasso;
-
 import br.com.mobicare.viajabessa.R;
-import br.com.mobicare.viajabessa.events.PacoteListagemItemClickEvent;
 import br.com.mobicare.viajabessa.models.Pacote;
 import br.com.mobicare.viajabessa.utils.BusProvider;
 import br.com.mobicare.viajabessa.utils.PicassoCache;

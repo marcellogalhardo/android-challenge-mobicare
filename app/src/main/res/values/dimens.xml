@@ -2,4 +2,8 @@
 <resources>
     <dimen name="title">17dp</dimen>
     <dimen name="price">15dip</dimen>
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="padding_medium">7dp</dimen>
+    <dimen name="padding_bigger">15dp</dimen>
+    <dimen name="height_none">0dp</dimen>
 </resources>
