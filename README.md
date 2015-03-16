@@ -24,7 +24,7 @@
  
 <h2>3. Considerações:</h2>
 
-- Documentação da API do Viajabessa em MOC: http://docs.mobicareviajabessa.apiary.io/
+- Documentação da API do Viajabessa (Mock): http://docs.mobicareviajabessa.apiary.io/
 - Para carregar novos dados do servidor, basta usar o "pull to refresh" na listview de pacotes.
 - O ServiceFactory, que tem como responsabilidade criar os objetos já configurados que irão consumir os serviços (mock) utiliza um requestInterceptor para enviar o User-Agent, Device-Version, Device-Model e Device-Manufacturer em cada request pelo header (para o Marketing ter acesso as informações do celular do usuário).
 - Esquema de cores de acordo com o material design colors (http://www.google.com/design/spec/style/color.html).
