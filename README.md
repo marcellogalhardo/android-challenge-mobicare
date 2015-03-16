@@ -50,3 +50,10 @@
 <img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/tela_pequena/Screenshot_2015-03-15-22-49-44.png?raw=true"></img>
 <img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/tela_pequena/Screenshot_2015-03-15-22-49-50.png?raw=true"></img>
 <img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/tela_pequena/Screenshot_2015-03-15-22-50-05.png?raw=true"></img>
+
+<h3>6. Imagens do aplicativo (Android 2.3.3):</h3>
+
+<img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/android_2_3_3/device-2015-03-15-232410.png?raw=true"></img>
+<img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/android_2_3_3/device-2015-03-15-232429.png?raw=true"></img>
+<img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/android_2_3_3/device-2015-03-15-232448.png?raw=true"></img>
+<img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/android_2_3_3/device-2015-03-15-232500.png?raw=true"></img>
