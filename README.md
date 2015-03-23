@@ -42,6 +42,7 @@
 
 <h3>5. Imagens do aplicativo (Android 2.3.3; tela pequena):</h3>
 
- Obs: Falta subir as novas imagens.
-
-<img src=""></img>
+<img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/android_2_3_3_tela_grande/device-2015-03-22-231552.png?raw=true"></img>
+<img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/android_2_3_3_tela_grande/device-2015-03-22-231642.png?raw=true"></img>
+<img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/android_2_3_3_tela_grande/device-2015-03-22-231703.png?raw=true"></img>
+<img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/android_2_3_3_tela_grande/device-2015-03-22-231719.png?raw=true"></img>
