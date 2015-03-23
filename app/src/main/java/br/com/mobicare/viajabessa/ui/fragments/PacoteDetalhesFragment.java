@@ -10,6 +10,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.gc.materialdesign.views.ButtonFlat;
+import com.gc.materialdesign.views.ButtonRectangle;
+import com.gc.materialdesign.widgets.SnackBar;
+
 import br.com.mobicare.viajabessa.R;
 import br.com.mobicare.viajabessa.models.Pacote;
 import br.com.mobicare.viajabessa.utils.BusProvider;
@@ -76,7 +80,13 @@ public class PacoteDetalhesFragment extends Fragment {
         buttonComprar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Integração com pagamento", Toast.LENGTH_LONG).show();
+                SnackBar snackbar = new SnackBar(getActivity(), getString(R.string.error_network_problem), getString(R.string.dialog_tryagain), new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        buttonComprar.performClick();
+                    }
+                });
+                snackbar.show();
             }
         });
     }

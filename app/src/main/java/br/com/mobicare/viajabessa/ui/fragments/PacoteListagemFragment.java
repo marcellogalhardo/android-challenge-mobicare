@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.gc.materialdesign.widgets.SnackBar;
 import com.j256.ormlite.dao.RuntimeExceptionDao;
 import com.squareup.otto.Subscribe;
 
@@ -57,7 +58,13 @@ public class PacoteListagemFragment extends Fragment {
     @Subscribe
     public void ObtemPacotesTaskFalha(ObtemPacotesTaskFalhaEvent evento) {
         swipeRefreshLayoutPacotes.setRefreshing(false);
-        Toast.makeText(getActivity(), getString(R.string.error_network_problem), Toast.LENGTH_SHORT).show();
+        SnackBar snackbar = new SnackBar(getActivity(), getString(R.string.error_network_problem), getString(R.string.dialog_tryagain), new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                BusProvider.getInstance().post(new PacoteListagemAtualizarEvent());
+            }
+        });
+        snackbar.show();
     }
 
     @Override
@@ -79,6 +86,9 @@ public class PacoteListagemFragment extends Fragment {
                 BusProvider.getInstance().post(new PacoteListagemAtualizarEvent());
             }
         });
+        swipeRefreshLayoutPacotes.setColorSchemeColors(
+                R.color.blue,
+                R.color.blue_dark);
     }
 
     private List<Pacote> obterPacotes() {

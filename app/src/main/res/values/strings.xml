@@ -7,4 +7,7 @@
     <string name="format.money">R$ %10.2f</string>
     <string name="message.update">Atualizando dados...</string>
     <string name="error.network.problem">Não é possível conectar à Internet.</string>
+    <string name="dialog.buy">Comprar</string>
+    <string name="dialog.tryagain">Tentar novamente</string>
+    <string name="dialog.description"><b>Descrição</b></string>
 </resources>

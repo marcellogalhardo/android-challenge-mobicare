@@ -82,9 +82,9 @@ public class MainActivity extends ActionBarActivity {
 
     private void configurarPacoteListagemFragment() {
         PacoteListagemFragment fragment = new PacoteListagemFragment();
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_content,  fragment);
-        fragmentTransaction.commit();
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment_content,  fragment);
+        transaction.commit();
     }
 
     private void configurarPacoteDetalhesFragment(Bundle parametros) {

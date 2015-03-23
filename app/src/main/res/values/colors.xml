@@ -7,6 +7,10 @@
     <color name="red_accent">#FF5252</color>
     <color name="red">#F44336</color>
     <color name="white">#ffffff</color>
+    <color name="blue_dark">#1976D2</color>
+    <color name="blue">#2196F3</color>
+    <color name="blue_transparent_20">#CC2196F3</color>
+    <color name="blue_transparent_50">#802196F3</color>
 
     <!-- List View Color -->
     <color name="list_divider">#d9d9d9</color>
