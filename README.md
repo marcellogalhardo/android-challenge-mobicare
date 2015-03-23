@@ -2,8 +2,6 @@
 
 <img src="https://raw.githubusercontent.com/marcellogalhardo/Viajabessa/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"> </img>
 
- Obs: Falta subir a nova logo.
-
 <h2>1. Estrutura do projeto.</h2>
 
  - Events: Pacote responsável pelos eventos customizados internos do APP.
@@ -33,9 +31,14 @@
 
 <h3>4. Imagens do aplicativo (Android 5; tela grande):</h3>
 
- Obs: Falta subir as novas imagens.
-
-<img src=""></img>
+<img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/android_5_tela_grande/Screenshot_2015-03-22-22-54-10.png?raw=true"></img>
+<img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/android_5_tela_grande/Screenshot_2015-03-22-22-54-18.png?raw=true"></img>
+<img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/android_5_tela_grande/Screenshot_2015-03-22-22-54-25.png?raw=true"></img>
+<img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/android_5_tela_grande/Screenshot_2015-03-22-22-54-31.png?raw=true"></img>
+<img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/android_5_tela_grande/Screenshot_2015-03-22-22-54-45.png?raw=true"></img>
+<img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/android_5_tela_grande/Screenshot_2015-03-22-22-55-07.png?raw=true"></img>
+<img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/android_5_tela_grande/Screenshot_2015-03-22-22-55-11.png?raw=true"></img>
+<img src="https://github.com/marcellogalhardo/Viajabessa/blob/master/screenshot/android_5_tela_grande/Screenshot_2015-03-22-22-55-18.png?raw=true"></img>
 
 <h3>5. Imagens do aplicativo (Android 2.3.3; tela pequena):</h3>
 
