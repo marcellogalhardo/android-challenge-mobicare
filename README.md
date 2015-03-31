@@ -1,6 +1,6 @@
 <h1>Desenvolvimento do projeto Viajabessa.</h1>
 
-<img src="https://raw.githubusercontent.com/marcellogalhardo/Viajabessa/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"> </img>
+<img src="https://raw.githubusercontent.com/marcellogalhardo/Viajabessa/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"></img>
 
 <h2>1. Estrutura do projeto.</h2>
 
